@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Test</title>
+</head>
+
+<body>
+    <section class="dachboard">
+        <!-- side menu -->
+        <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+        <nav class="side" id="mySidenav">
+            <div class="side__menu">
+                <div class="side__title">
+                    <img class="side__title-logo" src="./assets/img/logo.svg" alt="">
+                    <h1 class="side__title-text">Dashboard
+                        <span class="side__title-text_v">v.01</span>
+                    </h1>
+
+                </div>
+                <div class="side__nav">
+                    <ul class="side__nav-bar">
+                        <li class="side__nav-bar_item">
+                            <div class="side__nav-bar_item-text">
+                                <img src="./assets/img/key-square.svg" alt="" class="side__nav-bar_item-icon">
+                                <p class="side__nav-bar_item-menu">Dashboard</p>
+                            </div>
+                        </li>
+                        <li class="side__nav-bar_item">
+                            <div class="side__nav-bar_item-text">
+                                <img src="./assets/img/3d-square_1.svg" alt="" class="side__nav-bar_item-icon">
+                                <p class="side__nav-bar_item-menu">Product</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right side__nav-bar_item-arrow"></i>
+                        </li>
+                        <li class="side__nav-bar_item side__nav-bar_item-active">
+                            <div class="side__nav-bar_item-text">
+                                <img src="./assets/img/user-square_1.svg" alt="" class="side__nav-bar_item-icon">
+                                <p class="side__nav-bar_item-menu">Customers</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right side__nav-bar_item-arrow"></i>
+                        </li>
+                        <li class="side__nav-bar_item">
+                            <div class="side__nav-bar_item-text">
+                                <img src="./assets/img/wallet-money_2.svg" alt="" class="side__nav-bar_item-icon">
+                                <p class="side__nav-bar_item-menu">Income</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right side__nav-bar_item-arrow"></i>
+                        </li>
+                        <li class="side__nav-bar_item">
+                            <div class="side__nav-bar_item-text">
+                                <img src="./assets/img/discount-shape_1.svg" alt="" class="side__nav-bar_item-icon">
+                                <p class="side__nav-bar_item-menu">Promote</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right side__nav-bar_item-arrow"></i>
+                        </li>
+                        <li class="side__nav-bar_item">
+                            <div class="side__nav-bar_item-text">
+                                <img src="./assets/img/message-question_1.svg" alt="" class="side__nav-bar_item-icon">
+                                <p class="side__nav-bar_item-menu">Help</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right side__nav-bar_item-arrow"></i>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-bars"></i></a>
+            </div>
+
+            <div class="side__user">
+                <img class="side__user-img" src="./assets/img/side_user.svg" alt="">
+                <div class="side__user-info">
+                    <p class="side__user-info_name">Evano</p>
+                    <span class="side__user-info_proff">Project Manager</span>
+                </div>
+            </div>
+        </nav>
+        <!-- side menu -->
+        <!-- product -->
+
+        <section class="product__section">
+            <h1 class="section__text">Hello Evano 👋🏼,</h1>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__header-title">
+                        <h1 class="product__header-title_text">All Customers</h1>
+                        <span class="product__header-title_active">Active Members</span>
+                    </div>
+                    <div class="product__header-search">
+                        <input class="product__header-search_item" placeholder="Search" type="search">
+                        <img class="product__header-search_item-img" src="./assets/img/search_1.svg" alt="">
+                    </div>
+                </div>
+                <table class="product__rwd-table">
+                    <tr class="product__rwd-table_info-cell">
+                        <th class="product__info-text">Customer Name</th>
+                        <th class="product__info-text">Company</th>
+                        <th class="product__info-text">Phone Number</th>
+                        <th class="product__info-text">Email</th>
+                        <th class="product__info-text">Country</th>
+                        <th class="product__info-text">Status</th>
+                    </tr>
+                    <tr class="product__rwd-table_info-cell">
+                        <td data-th="Movie Title">Jane Cooper</td>
+                        <td data-th="Company">Microsoft</td>
+                        <td data-th="Phone Number">(225) 555-0118</td>
+                        <td data-th="Email">jane@microsoft.com</td>
+                        <td data-th="Country">United States</td>
+                        <td data-th="Status"><button class="btn__1-active">Active</button></td>
+                    </tr>
+                    <tr class="product__rwd-table_info-cell">
+                        <td data-th="Movie Title">Floyd Miles</td>
+                        <td data-th="Company">Yahoo</td>
+                        <td data-th="Phone Number">(205) 555-0100</td>
+                        <td data-th="Email">floyd@yahoo.com</td>
+                        <td data-th="Country">Kiribati</td>
+                        <td data-th="Status"><button class="btn__1-inactive">Inactive</button></td>
+                    </tr>
+                    <tr class="product__rwd-table_info-cell">
+                        <td data-th="Movie Title">Ronald Richards</td>
+                        <td data-th="Company">Adobe</td>
+                        <td data-th="Phone Number">(302) 555-0107</td>
+                        <td data-th="Email">ronald@adobe.com</td>
+                        <td data-th="Country">Israel</td>
+                        <td data-th="Status"><button class="btn__1-inactive">Inactive</button></td>
+                    </tr>
+                    <tr class="product__rwd-table_info-cell">
+                        <td data-th="Movie Title">Marvin McKinney</td>
+                        <td data-th="Company">Tesla</td>
+                        <td data-th="Phone Number">(252) 555-0126</td>
+                        <td data-th="Email">marvin@tesla.com</td>
+                        <td data-th="Country">Iran</td>
+                        <td data-th="Status"><button class="btn__1-active">Active</button></td>
+                    </tr>
+                    <tr class="product__rwd-table_info-cell">
+                        <td data-th="Movie Title">Jerome Bell</td>
+                        <td data-th="Company">Google</td>
+                        <td data-th="Phone Number">(629) 555-0129</td>
+                        <td data-th="Email">erome@google.com</td>
+                        <td data-th="Country">Réunion</td>
+                        <td data-th="Status"><button class="btn__1-active">Active</button></td>
+                    </tr>
+                    <tr class="product__rwd-table_info-cell">
+                        <td data-th="Movie Title">Kathryn Murphy</td>
+                        <td data-th="Company">Microsoft</td>
+                        <td data-th="Phone Number">(406) 555-0120</td>
+                        <td data-th="Email">kathryn@microsoft.com</td>
+                        <td data-th="Country">Curaçao</td>
+                        <td data-th="Status"><button class="btn__1-active">Active</button></td>
+                    </tr>
+                    <tr class="product__rwd-table_info-cell">
+                        <td data-th="Movie Title">Jacob Jones</td>
+                        <td data-th="Company">Yahoo</td>
+                        <td data-th="Phone Number">(208) 555-0112</td>
+                        <td data-th="Email">jacob@yahoo.com/td>
+                        <td data-th="Country">Brazil</td>
+                        <td data-th="Status"><button class="btn__1-active">Active</button></td>
+                    </tr>
+                    <tr class="product__rwd-table_info-cell">
+                        <td data-th="Movie Title">Kristin Watson</td>
+                        <td data-th="Company">Facebook</td>
+                        <td data-th="Phone Number">(704) 555-0127</td>
+                        <td data-th="Email">kristin@facebook.com</td>
+                        <td data-th="Country">Åland Islands</td>
+                        <td data-th="Status"><button class="btn__1-inactive">Inactive</button></td>
+                    </tr>
+                </table>
+                <div class="product__pagination">
+                    <div class="product__pagination-info">
+                        <p class="product__pagination-info_text">Showing data 1 to 8 of 256K entries</p>
+                    </div>
+                    <div class="product__pagination-item">
+                        <a class="product__pagination-item_link" href="#"> <i
+                                class="fa-solid fa-angle-left product__pagination-item_link_arrow"></i></a>
+                        <a class="product__pagination-item_link product__pagination-item_link_active" href="#">1</a>
+                        <a class="product__pagination-item_link" href="#">2</a>
+                        <a class="product__pagination-item_link" href="#">3</a>
+                        <a class="product__pagination-item_link" href="#">4</a>
+                        <a class="product__pagination-item_link  product__pagination-item_link_dots" href="#">...</a>
+                        <a class="product__pagination-item_link" href="#">40</a>
+                        <a class="product__pagination-item_link" href="#"> <i
+                                class="fa-solid fa-angle-right product__pagination-item_link_arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product -->
+    </section>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block"
+            document.querySelector(".side").classList.add("sidenav")
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
